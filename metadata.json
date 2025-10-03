@@ -1,0 +1,7 @@
+{
+  "name": "Al-Turath Academy",
+  "description": "An online learning platform providing courses, lectures, assignments, and exams for students, built with a modern user interface.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
