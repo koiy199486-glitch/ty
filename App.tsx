@@ -1,7 +1,7 @@
 
 import React, { useState, useCallback } from 'react';
-import { Page } from './types';
-import { SocialIcons } from './components/ui/SocialIcons';
+import { Page } from './types.ts';
+import { SocialIcons } from './components/ui/SocialIcons.tsx';
 
 // --- Icon Components ---
 const HomeIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-6 h-6 mx-auto"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>;
