@@ -1,34 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al-Turath Academy</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- خط عربي Tajawal -->
     <style>
-      /* Using a font that has better Arabic support */
       @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
       body {
         font-family: 'Tajawal', sans-serif;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/"
-  }
-}
-</script>
-<!-- Add Babel to transpile JSX in the browser -->
-<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-</head>
-  <body>
-    <div id="root"></div>
-    <!-- Change script type to text/babel to let Babel transpile it -->
-    <script type="text/babel" data-type="module" src="/index.tsx"></script>
+
+    <!-- Babel لتحويل JSX مباشرة في المتصفح -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body class="bg-gray-50">
+    <div id="root" class="p-6"></div>
+
+    <!-- React JSX مباشرة هنا بدون ملف خارجي -->
+    <script type="text/babel">
+      const App = () => (
+        <div className="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg text-center">
+          <h1 className="text-3xl font-bold mb-4">مرحبا بكم في Al-Turath Academy</h1>
+          <p className="text-gray-700">هذي نسخة جاهزة للنشر على GitHub Pages مباشرة.</p>
+          <button className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+            اضغط هنا
+          </button>
+        </div>
+      );
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
   </body>
 </html>
